@@ -1,6 +1,4 @@
-# Project Name
-
-Sager Drone Tracking System
+# Sager Drone Tracking System
 
 ------------------------------------------------------------------------
 
