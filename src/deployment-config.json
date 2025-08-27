@@ -1,0 +1,36 @@
+{
+  "name": "drone-tracking-system",
+  "description": "Real-time drone tracking system with interactive map and WebSocket updates",
+  "version": "1.0.0",
+  "runtime": {
+    "node": "18.x",
+    "npm": "latest"
+  },
+  "deployment": {
+    "type": "autoscale",
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "port": 5000,
+    "healthCheck": {
+      "path": "/",
+      "timeout": 30,
+      "interval": 60
+    }
+  },
+  "environment": {
+    "NODE_ENV": "production",
+    "PORT": "5000"
+  },
+  "resources": {
+    "memory": "512MB",
+    "cpu": "1x",
+    "storage": "1GB"
+  },
+  "features": [
+    "WebSocket support",
+    "Real-time drone tracking",
+    "Interactive Mapbox integration",
+    "Responsive design",
+    "TypeScript"
+  ]
+}
